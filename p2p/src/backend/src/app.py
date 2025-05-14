@@ -3,7 +3,7 @@ from flask_cors import CORS
 from config import Config
 from extensions import db, bcrypt, jwt
 from controllers.auth_controller import auth_blueprint
-from controllers.dashboard_controller import dashboard_blueprint
+# from controllers.dashboard_controller import dashboard_blueprint
 
 # Initialize Flask app
 app = Flask(__name__)
