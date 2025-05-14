@@ -1,3 +1,4 @@
+# filepath: c:\Users\Administrator\Documents\genai-tokentitans\p2p\src\backend\src\controllers\dashboard_controller.py
 from flask import Blueprint, jsonify
 from services.dashboard_service import DashboardService
 
