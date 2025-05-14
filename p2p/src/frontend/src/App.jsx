@@ -12,6 +12,9 @@ const App = () => {
       <button onClick={() => setView(view === 'login' ? 'register' : 'login')}>
         Switch to {view === 'login' ? 'Register' : 'Login'}
       </button>
+      {isLogin ? <LoginForm /> : <RegisterForm />}
+
+      <LoanMarketplace />+
       <button onClick={() => setView('transaction')}>
         Go to Transaction Form
       </button>
@@ -23,8 +26,10 @@ const App = () => {
       {view === 'register' && <RegisterForm />}
       {view === 'transaction' && <TransactionForm />}
       {view === 'dashboard' && <Dashboard />}
+      {isLogin ? <LoginForm onLoginSuccess={handleLoginSuccess} /> : <RegisterForm />}
     </div>
   );
+  
 };
 
 export default App;
